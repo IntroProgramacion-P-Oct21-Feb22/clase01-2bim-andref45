@@ -13,19 +13,25 @@ import java.util.Scanner;
  * @author reroes
  */
 public class Ejemplo06 {
+
     public static void main(String[] args) {
         Scanner entrada = new Scanner(System.in);
         entrada.useLocale(Locale.US);
         int tabla;
         int operacion;
-        
-        System.out.println("Ingrese el tabla a generar");
+        String cadena = "";
+
+        System.out.println("Ingrese la tabla a generar");
         tabla = entrada.nextInt();
-        
+
         for (int contador = 5; contador <= 12; contador++) {
             operacion = tabla * contador;
-            System.out.printf("%d x %d = %d\n", tabla, contador, operacion);
+            cadena = String.format("%s%d x %d = %d\n",
+                    cadena,
+                    tabla,
+                    contador,
+                    operacion);
         }
-        
+        System.out.printf("%s", cadena);
     }
 }

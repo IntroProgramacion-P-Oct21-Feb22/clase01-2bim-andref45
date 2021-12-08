@@ -11,6 +11,8 @@
  */
 package paquete01;
 
+import java.util.Scanner;
+
 /**
  *
  * @author reroes
@@ -21,16 +23,24 @@ public class Ejemplo05 {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
+        
+        Scanner entrada = new Scanner(System.in);
         // 2. numero, i[0, n]
         int numero;
         // 3. potencia, i[0, n]
         int potencia;
         // 6. resultado, i[0, n]
         int resultado;
+        
+        System.out.println("Ingrese el valor de el número");
+        numero = entrada.nextInt();
+        
+        System.out.println("Ingrese el valor de la potencia");
+        potencia = entrada.nextInt();
         // numero <-- 4
-        numero = 10;
+        //numero = 10;
         // 8. potencia <-- 3
-        potencia = 3;
+        //potencia = 3;
         // 9. resultado <-- 1
         resultado = 1;
         
